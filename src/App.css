@@ -56,5 +56,9 @@ table {
 
 /* Column Size for thead */
 
+input, textarea {
+  width: 100%;
+}
+
 
 /* Column size for tbody */
