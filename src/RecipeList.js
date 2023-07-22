@@ -19,7 +19,14 @@ function RecipeList({recipes, deleteRecipe}) {
           </tr>
         </thead>
         <tbody>
-          
+          {recipes.map(recipe => <tr key={recipe.name} className="bgColor">
+            <td className="content_td"><p>{recipe.name}</p></td>
+            <td className="content_td"><p>{recipe.cuisine}</p></td>
+            <td className="content_td"><img src={recipe.photo} /></td>
+            <td className="content_td"><p>{recipe.ingredients}</p></td>
+            <td className="content_td"><p>{recipe.preparation}</p></td>
+            <td><button name="delete" onClick={()=>deleteRecipe(recipe.name)}>Delete</button></td>
+          </tr>)}
         </tbody>
       </table>
     </div>

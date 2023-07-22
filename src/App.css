@@ -15,6 +15,12 @@ header {
 
 /* typography */
 
+h1 {
+  font-family: 'Playfair Display SC';
+  text-align: center;
+  font-size: 64px;
+}
+
 html {
   font-family: 'helvetica neue', sans-serif;
 }
@@ -60,5 +66,30 @@ input, textarea {
   width: 100%;
 }
 
+th:nth-child(1), th:nth-child(2), th:nth-child(3), th:nth-child(6) {
+  width: 10%;
+}
+
+th:nth-child(4), th:nth-child(5) {
+ width: 30%;
+}
 
 /* Column size for tbody */
+
+
+td:nth-child(1), td:nth-child(2), td:nth-child(3), td:nth-child(6) {
+  width: 10%;
+}
+
+td:nth-child(4), td:nth-child(5) {
+ width: 30%;
+}
+
+
+.bgColor:nth-child(odd) {
+  background-color: #fff0c7;
+}
+
+img {
+  width: 100%;
+}

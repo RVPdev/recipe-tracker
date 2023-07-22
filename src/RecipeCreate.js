@@ -34,7 +34,7 @@ function RecipeCreate({recipes, addRecipe}) {
     <form name="create" onSubmit={handleSubmit}>
       <table>
         <tbody>
-          <tr>
+          <tr className="bgColor">
             <td>
               <input
                 name="name"
